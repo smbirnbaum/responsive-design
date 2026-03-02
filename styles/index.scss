@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-settings {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+}
+
+.logo {
+  display: block;
+  height: 19px;
+  width: 90px;
+  width: auto;
+}
+
+.header {
+  display: flex;
+  min-height: 180px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading--heading {
+    font-size: 90px;
+    font-weight: 500px;
+    line-height: 102px;
+    letter-spacing: -2px;
+}
+
+.heading--subtext {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.soup--image {
+    display: grid;
+    grid-column: 5/8;
+}
+
+.nav {
+  display: inline-flex;
+  flex-direction: row;
+  min-height: 23px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__link {
+    display: inline;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 22.4px;
+    text-decoration: none;
+    color: #111111;
+    letter-spacing: -0.35px;
+    list-style: none;
+}
+
+.nav__link:hover {
+  color: #4A4FF2;
+}
+
+.nav__li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 246px;
+    min-width: 416px;
+    width: 100%;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  min-width: 1360px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
