@@ -18,27 +18,34 @@
 
 .header {
   display: flex;
+  justify-content: center;
   min-height: 180px;
   align-items: center;
   justify-content: space-between;
 }
 
 .heading--heading {
-    font-size: 90px;
-    font-weight: 500px;
+    justify-self: center;
+    font-size: clamp(40px, 6vw, 90px);
+    font-weight: 500;
     line-height: 102px;
     letter-spacing: -2px;
+    min-width: 455px;
+    min-height: 102px;
 }
 
 .heading--subtext {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: 22px;
     line-height: 33px;
+    justify-self: center;
+    min-width: 573px;
+    min-height: 66px;
 }
 
-.soup--image {
-    display: grid;
-    grid-column: 5/8;
+.hero-image {
+    width: 100%;
+    height: auto;
 }
 
 .nav {
@@ -73,9 +80,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 246px;
-    min-width: 416px;
     width: 100%;
+    gap: 40px;
 }
 
 body {
@@ -83,9 +89,90 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  height: 100vh;
-  min-width: 1360px;
+  min-height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .page-settings {
+    padding: 0 24px;
+  }
+
+  .header {
+    min-height: auto;
+    padding: 40px 0;
+    align-items: flex-start;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .heading--heading {
+    min-width: 0;
+    min-height: 0;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .heading--subtext {
+    min-width: 0;
+    min-height: 0;
+    width: 100%;
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero-image {
+    max-width: 720px;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .nav__li {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .page-settings {
+    padding: 0 16px;
+  }
+
+  .header {
+    padding: 24px 0;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav__li {
+    margin-right: 16px;
+  }
+
+  .heading--heading {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1px;
+  }
+
+  .heading--subtext {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .hero-image {
+    max-width: 320px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
